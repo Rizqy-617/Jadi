@@ -42,7 +42,7 @@ func main() {
 	// Setup allowed Header, Method, and Origin for CORS on this below code ...
 	var AllowedHeaders = handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"})
 	var AllowedMethods = handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS", "PATCH", "DELETE"})
-	var AllowedOrigins = handlers.AllowedOrigins([]string{"http://localhost:3000"})
+	var AllowedOrigins = handlers.AllowedOrigins([]string{"*"})
 
 	// Embed the setup allowed in 2 parameter on this below code ...
 	fmt.Println("Server is running on http://" + SERVER_NAME + ":" + PORT + "/api/" + VERSION)
