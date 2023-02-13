@@ -45,6 +45,6 @@ func main() {
 	var AllowedOrigins = handlers.AllowedOrigins([]string{"http://localhost:3000"})
 
 	// Embed the setup allowed in 2 parameter on this below code ...
-	fmt.Println("Server is running on http://" + SERVER_NAME + ":" + PORT + "/api/" + VERSION)
-	http.ListenAndServe(SERVER_NAME+":"+PORT, handlers.CORS(AllowedHeaders, AllowedMethods, AllowedOrigins)(r))
+	fmt.Println("Server is running on http://" + SERVER_NAME + ":" + "/api/" + VERSION)
+	http.ListenAndServe(SERVER_NAME+":", handlers.CORS(AllowedHeaders, AllowedMethods, AllowedOrigins)(r))
 }
