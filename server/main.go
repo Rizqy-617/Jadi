@@ -23,7 +23,6 @@ func main() {
 	}
 
 	SERVER_NAME := os.Getenv("SERVER_NAME")
-	PORT := os.Getenv("PORT")
 	VERSION := os.Getenv("API_VERSION")
 
 	// Database
