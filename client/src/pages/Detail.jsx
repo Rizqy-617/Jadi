@@ -38,11 +38,7 @@ export default function Detail(props) {
 
 
 	const showBooking = () => {
-		if (!myBooking) {
-			setShowModal(true)
-		} else {
-			redirect("/mybooking");
-		}
+		setShowModal(true)
 	}
 
 	console.log("data showed", property);
