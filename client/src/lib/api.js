@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create base URL API
 export const API = axios.create({
-  baseURL: "https://sassy-use-production.up.railway.app/api/v1/",
+  baseURL: "jadi-production.up.railway.app/api/v1/",
 });
 // Set Authorization Token Header
 export const setAuthToken = (token) => {
