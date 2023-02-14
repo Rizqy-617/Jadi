@@ -23,7 +23,7 @@ export default function Home() {
 
 	let id;
 	return (
-		<Layout className={css.BackgrounIndex}>
+		<Layout className={css.BackgroundIndex}>
 			<div className={css.MaxWidth}>
 				<div className={css.Card}>
 					<h2 className='fw-bold fs-1 my-4'>Incoming Transaction</h2>
