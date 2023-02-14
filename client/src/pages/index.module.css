@@ -24,7 +24,7 @@
   height:100vh;
   padding: 8rem 3rem 3rem 3rem;
   overflow: auto;
-  background-color: whiite;
+  background-color: white;
   /* overflow: auto; */
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none; 
@@ -50,7 +50,7 @@
 }
 
 .BackgroundIndex {
-  background-color: rgb(255, 95, 158);
+  background-color: white;
 }
 
 @media (min-width: 1440px) {
