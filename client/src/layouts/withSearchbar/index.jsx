@@ -8,7 +8,7 @@ export default function Store(props) {
 			<Navbar
 				style={{ zIndex: "20" }}
 				useSearchBar={true}
-				className={"bg-navy fixed-top z-2"}
+				className={"bg-body fixed-top z-2"}
 			/>
 			{props.children}
 		</div>
