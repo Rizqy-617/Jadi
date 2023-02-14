@@ -45,6 +45,10 @@ overflow: hidden;
 
 }
 
+.BackgroundIndex {
+  background-color: rgb(163, 163, 163);
+}
+
 .ListTitle {
   display: block;
   color: black;
