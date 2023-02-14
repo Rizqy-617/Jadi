@@ -22,7 +22,6 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	SERVER_NAME := os.Getenv("SERVER_NAME")
 	PORT := os.Getenv("SERVER_PORT")
 	VERSION := os.Getenv("API_VERSION")
 
@@ -45,6 +44,6 @@ func main() {
 	var AllowedOrigins = handlers.AllowedOrigins([]string{"http://localhost:3000"})
 
 	// Embed the setup allowed in 2 parameter on this below code ...
-	fmt.Println("Server is running on http://" + SERVER_NAME + ":" + PORT + "/api/" + VERSION)
+	fmt.Println("Server is running on http://" + ":" + PORT + "/api/" + VERSION)
 	http.ListenAndServe(":"+PORT, handlers.CORS(AllowedHeaders, AllowedMethods, AllowedOrigins)(r))
 }
