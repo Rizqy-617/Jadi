@@ -22,7 +22,7 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	PORT := os.Getenv("SERVER_PORT")
+	PORT := os.Getenv("PORT")
 	VERSION := os.Getenv("API_VERSION")
 
 	// Database
