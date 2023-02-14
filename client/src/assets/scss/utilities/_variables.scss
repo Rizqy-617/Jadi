@@ -36,17 +36,21 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
-$stone:   #ececec !default;
+$blue:      #0d6efd !default;
+$indigo:    #6610f2 !default;
+$purple:    #6f42c1 !default;
+$pink:      #d63384 !default;
+$red:       #dc3545 !default;
+$orange:    #fd7e14 !default;
+$yellow:    #ffc107 !default;
+$green:     #198754 !default;
+$teal:      #20c997 !default;
+$cyan:      #0dcaf0 !default;
+$stone:     #ececec !default;
+$navy:      #060047 !default;
+$violetred: #B3005E !default;
+$deeppink:  #E90064 !default;
+$hotpink:   #FF5F9E !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -64,6 +68,10 @@ $colors: (
   "stone":      $stone,
   "black":      $black,
   "white":      $white,
+  "navy":       $navy,
+  "violetred":  $violetred,
+  "deeppink":   $deeppink,
+  "hotpink":    $hotpink,
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ) !default;
@@ -187,6 +195,46 @@ $stone-600: shade-color($stone, 20%) !default;
 $stone-700: shade-color($stone, 40%) !default;
 $stone-800: shade-color($stone, 60%) !default;
 $stone-900: shade-color($stone, 80%) !default;
+
+$navy-100:  tint-color($navy, 80%)  !default;
+$navy-200:  tint-color($navy, 60%)  !default;
+$navy-300:  tint-color($navy, 40%)  !default;
+$navy-400:  tint-color($navy, 20%)  !default;
+$navy-500:  $navy !default;
+$navy-600:  shade-color($navy, 20%) !default;
+$navy-700:  shade-color($navy, 40%) !default;
+$navy-800:  shade-color($navy, 60%) !default;
+$navy-900:  shade-color($navy, 90%) !default;
+
+$violetred-100:  tint-color($violetred, 80%)  !default;
+$violetred-200:  tint-color($violetred, 60%)  !default;
+$violetred-300:  tint-color($violetred, 40%)  !default;
+$violetred-400:  tint-color($violetred, 20%)  !default;
+$violetred-500:  $violetred !default;
+$violetred-600:  shade-color($violetred, 20%) !default;
+$violetred-700:  shade-color($violetred, 40%) !default;
+$violetred-800:  shade-color($violetred, 60%) !default;
+$violetred-900:  shade-color($violetred, 90%) !default;
+
+$deeppink-100:  tint-color($deeppink, 80%)  !default;
+$deeppink-200:  tint-color($deeppink, 60%)  !default;
+$deeppink-300:  tint-color($deeppink, 40%)  !default;
+$deeppink-400:  tint-color($deeppink, 20%)  !default;
+$deeppink-500:  $deeppink !default;
+$deeppink-600:  shade-color($deeppink, 20%) !default;
+$deeppink-700:  shade-color($deeppink, 40%) !default;
+$deeppink-800:  shade-color($deeppink, 60%) !default;
+$deeppink-900:  shade-color($deeppink, 90%) !default;
+
+$hotpink-100:  tint-color($hotpink, 80%)  !default;
+$hotpink-200:  tint-color($hotpink, 60%)  !default;
+$hotpink-300:  tint-color($hotpink, 40%)  !default;
+$hotpink-400:  tint-color($hotpink, 20%)  !default;
+$hotpink-500:  $hotpink !default;
+$hotpink-600:  shade-color($hotpink, 20%) !default;
+$hotpink-700:  shade-color($hotpink, 40%) !default;
+$hotpink-800:  shade-color($hotpink, 60%) !default;
+$hotpink-900:  shade-color($hotpink, 90%) !default;
 
 $blues: (
   "blue-100": $blue-100,
@@ -319,6 +367,54 @@ $stone: (
   "stone-800": $stone-800,
   "stone-900": $stone-900
 ) !default;
+
+$navy: (
+  "navy-100": $navy-100,
+  "navy-200": $navy-200,
+  "navy-300": $navy-300,
+  "navy-400": $navy-400,
+  "navy-500": $navy-500,
+  "navy-600": $navy-600,
+  "navy-700": $navy-700,
+  "navy-800": $navy-800,
+  "navy-900": $navy-900
+) !default;
+
+$violetred: (
+  "violetred-100": $violetred-100,
+  "violetred-200": $violetred-200,
+  "violetred-300": $violetred-300,
+  "violetred-400": $violetred-400,
+  "violetred-500": $violetred-500,
+  "violetred-600": $violetred-600,
+  "violetred-700": $violetred-700,
+  "violetred-800": $violetred-800,
+  "violetred-900": $violetred-900
+) !default;
+
+$deeppink: (
+  "deeppink-100": $deeppink-100,
+  "deeppink-200": $deeppink-200,
+  "deeppink-300": $deeppink-300,
+  "deeppink-400": $deeppink-400,
+  "deeppink-500": $deeppink-500,
+  "deeppink-600": $deeppink-600,
+  "deeppink-700": $deeppink-700,
+  "deeppink-800": $deeppink-800,
+  "deeppink-900": $deeppink-900
+) !default;
+
+$hotpink: (
+  "hotpink-100": $hotpink-100,
+  "hotpink-200": $hotpink-200,
+  "hotpink-300": $hotpink-300,
+  "hotpink-400": $hotpink-400,
+  "hotpink-500": $hotpink-500,
+  "hotpink-600": $hotpink-600,
+  "hotpink-700": $hotpink-700,
+  "hotpink-800": $hotpink-800,
+  "hotpink-900": $hotpink-900
+) !default;
 // fusv-enable
 
 // scss-docs-start theme-color-variables
@@ -331,6 +427,10 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$navy:          $navy !default;
+$violetred:     $violetred !default;
+$deeppink:      $deeppink !default;
+$hotpink:       $hotpink  !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -343,7 +443,11 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "navy":       $navy,
+  "violetred":  $violetred,
+  "deeppink":   $deeppink,
+  "hotpink":    $hotpink
 ) !default;
 // scss-docs-end theme-colors-map
 
