@@ -32,7 +32,7 @@ export default function Profile() {
 	})
 
 	return (
-		<Layout className='bg-tertiary'>
+		<Layout className={css.BackgroundIndex}>
 			<div className=''>
 				<div className={css.MaxWidth}>
 					<div className={css.Card}>
