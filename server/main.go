@@ -46,5 +46,5 @@ func main() {
 
 	// Embed the setup allowed in 2 parameter on this below code ...
 	fmt.Println("Server is running on http://" + SERVER_NAME + ":" + PORT + "/api/" + VERSION)
-	http.ListenAndServe(SERVER_NAME+":"+PORT, handlers.CORS(AllowedHeaders, AllowedMethods, AllowedOrigins)(r))
+	http.ListenAndServe(":"+PORT, handlers.CORS(AllowedHeaders, AllowedMethods, AllowedOrigins)(r))
 }
