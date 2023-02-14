@@ -41,7 +41,7 @@ func main() {
 	// Setup allowed Header, Method, and Origin for CORS on this below code ...
 	var AllowedHeaders = handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"})
 	var AllowedMethods = handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS", "PATCH", "DELETE"})
-	var AllowedOrigins = handlers.AllowedOrigins([]string{"*"})
+	var AllowedOrigins = handlers.AllowedOrigins([]string{"https://jadi-ten.vercel.app/"})
 
 	// Embed the setup allowed in 2 parameter on this below code ...
 	fmt.Println("Server is running on http://" + ":" + PORT + "/api/" + VERSION)
