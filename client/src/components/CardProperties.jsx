@@ -49,7 +49,7 @@ export default function CardProperties(props) {
 								src={
 									room.image
 								}
-								style={{width: "20rem", height: "20rem"}}
+								style={{width: "25rem", height: "20rem"}}
 							/>
 							<Card.Body>
 								<Card.Title>
