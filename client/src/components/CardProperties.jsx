@@ -45,11 +45,11 @@ export default function CardProperties(props) {
 							</div>
 							<Card.Img
 								variant='top'
-								className='p-2'
+								className='p-2 rounded'
 								src={
 									room.image
 								}
-								style={{width: "24.5rem", height: "20rem"}}
+								style={{width: "24.6rem", height: "20rem"}}
 							/>
 							<Card.Body>
 								<Card.Title>
