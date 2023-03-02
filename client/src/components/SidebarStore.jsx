@@ -96,7 +96,7 @@ export default function Sidebar(props) {
 								</div>
 							</div>
 	
-							<div className=''>
+							{/* <div className=''>
 								<h4 className=''>
 									<strong>Date</strong>
 								</h4>
@@ -115,7 +115,7 @@ export default function Sidebar(props) {
 										/>
 									</InputGroup>
 								</div>
-							</div>
+							</div> */}
 	
 							<Stack>
 								<h4 className=''>
